@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 9, 2018
+    Filename: index.html
+    Purpose: The purpose of this exersice is to practise to use form with the creation of login
+             form to prompt user for password.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <hr>
+
+    <!-- Here we create a form -->
+    <!-- <form action="login.html" method="get" enctype="application/x-www-form-urlencoded"> -->
+    <form action="login.html" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="username" placeholder="username" size="30" minlength="3" maxlength="12">
+        <input type="password" name="password" placeholder="password" size="30" maxlength="8">
+        <input type="submit" value="Login" name="login">
+    </form>
+
+</body>
+</html>

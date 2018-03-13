@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 13, 2018
+    Filename: index.html
+    Purpose: The purpose of this exersice is to create form with fields such as: select, textarea,
+             file input, and button.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+
+<body>
+    <header>
+        <h1>Create User</h1>
+        <hr>
+    </header>
+
+    <!-- SJ2130318 - Creating form here -->
+    <div id="inputForm">
+        <form action="../exercise_12/create_user.html" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <!-- SJ2130318 - Input name field -->
+              <label for="nameid">Name:</label>
+              <input type="text" name="name" placeholder=" name" id="nameid"/>
+              <br>
+              <br>
+              <!-- &nbsp; &nbsp; &nbsp; -->
+
+              <!-- SJ2130138 - Select field for movies with wonder women selected by default -->
+              <label for="moviesid">Movies: </label>
+              <select name="Movies" id="moviesid">
+                  <option value="deadpool">Deadpool</option>
+                  <option value="batman_vs_superman">Batman v Superman</option>
+                  <option value="civil_war">Captain America: Civil War</option>
+                  <option value="doctor_strange">Doctor Strange</option>
+                  <option value="suicide_squad">Suicide Squad</option>
+                  <option value="apocalypse">X-Men: Apocalypse</option>
+                  <option value="gotg_vol2">Guardians of the Galaxy Vol 2</option>
+                  <option value="justice_league">Justice League</option>
+                  <option value="logan">Logan</option>
+                  <option value="homecoming">Spider-Man: Homecoming</option>
+                  <option value="wonder_woman" selected>Wonder Woman</option>
+                  <option value="thor_ragnarok">Thor: Ragnarok</option>
+                  <option value="black_panther">Black Panther</option>
+              </select>
+              <br> <br>
+
+              <!-- SJ2130318 - Here we create a text area input field for user to input bio data -->
+              <label for="bioid">Comments: </label>
+              <textarea name="bio" placeholder="Please input your comments" id="bioid"></textarea>
+              <br> <br>
+
+              <!--SJ2130318 - Here we create field to allow user to upload image file -->
+              <label for="pictures">Upload Pictures: </label>
+              <input name="pictures" id="pictures" type="file" multiple />
+              <br> <br>
+
+              <!-- SJ2130318 - Here we create button to reset the input form -->
+              <!--<button type="reset"><img src="./img/reset_cycle.png" alt="reset icon" width=30 height=30 /></button>-->
+              <button type="reset" name="resetForm">Reset Form</button>
+              &nbsp; &nbsp;
+
+              <!-- SJ2130318 - Here we create button to create new user -->
+              <button value="create" name="create-user">+ User</button>
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>

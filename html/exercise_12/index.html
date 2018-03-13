@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 9, 2018
+    Filename: index.html
+    Purpose: The purpose of this exersice is to practise the use of form, radio button, and
+             checkbox.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create User</title>
+</head>
+
+<body>
+    <section>
+        <h1>Create User</h1>
+        <hr>
+    </section>
+
+    <!-- Creating form here -->
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded">
+        
+        <fieldset>
+            <legend>User Form</legend>
+            <br>
+            <label for="usernameid">Username:</label>
+            <input type="text" name="username" placeholder="username" size="30" maxlength="12" id="usernameid"/>
+            <br>
+            <br>
+            <label for="pwid">Password:</label>
+            <input type="password" name="password" placeholder="password" size="30" maxlength="8" id="pwid"/>
+            <br>
+            <br>
+            <!-- SJ0110318 - Here we create radio button -->
+            <div>
+                Select your favourite superhero
+                <br>
+                <label>Superhero:</label>
+                <br>
+                <input type="radio" name="superheros" value="Superman" /> Superman
+                <input type="radio" name="superheros" value="Batman" /> Batman
+                <input type="radio" name="superheros" value="Wonder Woman" checked="checked" /> Wonder Woman
+                <input type="radio" name="superheros" value="Flash" /> Flash
+                <input type="radio" name="superheros" value="Thor" /> Thor
+                <input type="radio" name="superheros" value="Hulk" /> Hulk
+            </div>
+            <br>
+
+            <!-- SJ1120318 - Here we create checkbox -->
+            <div>
+                Select your favourite video game
+                <br>
+                <label>Video games:</label>
+                <input type="checkbox" name="videogames" value="Fifa" checked="checked" /> Fifa
+                <input type="checkbox" name="videogames" value="NHL" /> NHL
+                <input type="checkbox" name="videogames" value="Resident Evil" /> Resident Evil
+                <input type="checkbox" name="videogames" value="Uncharted" checked /> Uncharted
+            </div>
+            <br>
+
+            <!-- SJ1120318 - Here we have hidden input field -->
+            <input type="hidden" name="userid" value="2300" />
+            <br>
+
+            <!-- SJ1120318 - Here we create image button -->
+            <!-- SJ1120318 - Original png width = 173 while height = 57, reduce by 25% respectively
+                 to give width = 130 and height = 43 -->
+            <input type="image" name="login" src="./img/login.png" width="130" height="43" />
+            
+        </fieldset>            
+
+    </form>
+</body>
+</html>
