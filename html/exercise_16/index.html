@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 15, 2018
+    Filename: index.html
+    Purpose: The purpose of this exersice is to practise the use of video and audio
+             as well as displaying few special characters.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Suilarso Japit">
+    <meta name="description" content="Learning HTML site using browser video and audio player">
+    <meta name="keywords" content="HTML, CSS, JS, COMIT, SkipTheDishes, VIDEO, AUDIO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Video &#38; Audio</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML Video &#38; Audio</h1>
+        <hr>
+    </header>
+
+    <h2>Play native audio &#38; video on a browser</h2>
+
+    <!-- SJ4150318 - Building video control -->
+    <video poster="./img/h-video1-poster.jpg" id="myVideo" width="845" height="475" controls />
+        <source src="./video/video1.mp4" type="video/mp4"/>
+        <p>Your browser doesn't support videos, please update.</p>
+    </video>
+    <hr>
+
+    <!-- SJ4150318 - Building audio element -->
+    <audio controls>
+        <source src="./audio/SoundHelix-Song-1.mp3" />
+        <p>Your browser doesn't support audio, please update.</p>
+    </audio>
+    <hr>
+
+    <!-- SJ4150318 - Displaying special characters -->
+    <div>
+        <p>number 2 is &gt; than 1</p>
+        <p>number 3 is &lt; than 5</p></than>
+        <p>I like Rick &amp; Morty</p>
+        <p>I like coding &#33;&#33;&#33;&#33;&#33;</p>
+        <p>&#59;&#8211;&#41;</p>
+    </div>
+</body>
+</html>
