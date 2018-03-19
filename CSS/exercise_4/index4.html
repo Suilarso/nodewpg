@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 18, 2018
+    Filename: index.html
+    Purpose: This exersice uses style element to demonstrate the effect of general selector, id selector,
+             and class selector.
+-->
+
+<html lang="en">
+<head>
+    <title>Selectors</title>
+
+    <!-- SJ0180318 - Adding style element. -->
+    <style>
+        * {
+            color: green;
+        }
+
+        #login {
+            color: gray;
+        }
+
+        .red {
+            color: red;
+        }
+
+        label, input {
+            color: pink;
+        }
+
+        input[type="submit"] {
+            color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Selectors</h1>
+    <hr>
+
+    <form id="login">
+        <div>
+            <label for="username">Username</label>
+            <input name="username" id="username" placeholder="Username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <div>
+        <p>This text is <span class="red">red</span></p>
+        <a href="#" class="red">Link</a>
+    </div>
+
+</body>
+</html>

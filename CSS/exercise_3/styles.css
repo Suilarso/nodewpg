@@ -1,0 +1,24 @@
+/*
+    Author: Suilarso Japit
+    Date: Mar 17, 2018
+    Filename: index.html
+    Purpose: This exersice uses css stylesheet file demonstrates the effect of styling.
+*/
+
+h1 {
+    color: red;
+}
+
+p {
+    color:gray;
+}
+
+a {
+    color: yellow;
+}
+
+h1 {
+    color: blue;
+}
+
+
