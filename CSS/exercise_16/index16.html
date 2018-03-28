@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 28, 2018
+    Filename: index16.html
+    Purpose: This exersice uses css style element to practise the use of list item various type including
+             the use of image to replace bullet point.
+-->
+
+<html>
+  <head>
+    <title>Learning CSS</title>
+
+    <!-- SJ3280318 - Add style element -->
+    <style>
+      ul ol {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      li {
+        list-style-position: inside;
+      }
+
+      ul {
+        list-style-type: decimal-leading-zero
+      }
+
+      ol {
+        list-style-type: square;
+      }
+
+      .decorated {
+        list-style-image: url(snow.png);
+        font-size: 30px;
+      }    
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ol>
+
+    <ul class="decorated">
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+    </ul>
+  </body>
+</html>

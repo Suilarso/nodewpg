@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 28, 2018
+    Filename: index17A.html
+    Purpose: This exersice uses css style element to practise styling table around the table's components.
+-->
+
+<html>
+  <head>
+    <title>Learning CSS</title>
+
+    <!-- SJ3280318 - Add style element here -->
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #6e6f74;
+            border-collapse: collapse;
+        }
+        thead {
+            color: #685e5c;
+            font-weight: bold;
+        }
+        tbody > tr {
+            border-bottom: 1px solid #ddd;
+        }
+        tr > th {
+            padding: 20px;
+        }
+        tr > td {
+            padding: 20px;
+        }
+        td:first-child {
+            color: #3e7589;
+        }
+        tr:last-child {
+            border: 0;
+        }
+        tfoot {
+            text-align: center;
+        }
+        tfoot a {
+            display: inline-block;
+            text-decoration: none;
+            color: #aaa;
+            margin-right: 10px;
+        }
+        tfoot a.active {
+            color: while;
+            font-weight: bold;
+            background-color: #008cba;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+        .selected {
+            background-color: #d9edf6;
+        }
+        .error {
+            background-color: #f2dedf;
+        }
+    </style>
+<!-- SJ3280318 - NOTE: when styling th and td, why do we need to use tr > th and tr > td? -->
+<!-- SJ3280318 - I think link elements should be descendent of tfoot and not children -->
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr class="selected">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <a href="#">first</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">last</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
