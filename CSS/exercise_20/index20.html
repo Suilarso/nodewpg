@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 29, 2018
+    Filename: index20.html
+    Purpose: This exersice uses css style element to practise relative position properties.
+-->
+
+<html>
+<head>
+  <title>Learing CSS</title>
+
+  <!-- SJ4290318 - Add style element -->
+  <style>
+      .container {
+        background-color: #eee;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border: 1px solid gray;
+      }
+      div {
+          position: relative;
+          Width: 200px;
+          Height: 200px;
+          background-color: red;
+          font-size: 72px;
+          text-align: center;
+          line-height: 200px;
+          box-shadow: 0 2px 1px #777;
+          text-shadow: 0 2px 1px #777;
+      }
+      .container > div:hover {
+          border-radius: 10px;
+          background-color: #ddd;
+      }
+      .container > div:first-child {
+          top: 0px;
+          left: 60px;
+      }
+      .container > div:last-child {
+          top: 0px;
+          left: 260px;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+  </div>
+</body>
+</html>
